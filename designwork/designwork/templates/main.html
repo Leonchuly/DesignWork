@@ -80,8 +80,8 @@
           <h1 class="jumbotron-heading">Album example</h1>
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="blog" class="btn btn-primary my-2">进入博客</a>
+            <a href="admin" class="btn btn-secondary my-2">管理员</a>
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@
             {% for gallerys in gallerys.all %}
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ gallerys.image.url }}">
+                <img class="card-img-top" src="{{ gallerys.image.url }}" height="196">
                 <div class="card-body">
                   <p class="card-text">{{ gallerys.description }}</p>
                   <div class="d-flex justify-content-between align-items-center">
