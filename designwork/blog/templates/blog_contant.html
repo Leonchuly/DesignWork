@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<style type="text/css">
+    pre{
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>BlogContent</title>
 </head>
 <body>
-    <h1>{{ blogc }}</h1>
+    <br>
+    <br>
+    <div style="text-align:center">
+        <h1>{{ blogc }}</h1>
+        {{ blogc.date }}
+        <br>
+        <img src="{{ blogc.image.url }}" width="50%">
+        <br>
+    </div>
+    <pre style="width:960px;font-size:130%;margin:20px auto;">{{ blogc.text }}</pre>
+    <div style="text-align:center">
+        <a href=".." class="btn btn-primary my-2">返回</a>
+    </div>
+    
 </body>
 </html>
